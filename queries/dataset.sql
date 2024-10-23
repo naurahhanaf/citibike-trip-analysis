@@ -1,3 +1,4 @@
+-- get the dataset with this query and explore it with looker studio to make data viz or report
 SELECT DISTINCT
   *
 FROM
