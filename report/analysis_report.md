@@ -83,3 +83,22 @@ ORDER BY
 **3. Trip Duration of Riders per Day**
 
 ![image](https://github.com/user-attachments/assets/d1471b51-20cb-40e9-84b6-662b4b84b7fc)
+
+## Conclution
+1. Dominance of Subscribers
+- Subscribers significantly dominate the total number of trips compared to Customers (occasional users or tourists). There are around 12.2 million trips by subscribers, compared to 305.6 thousand trips by customers.
+- In terms of gender, male subscribers far exceed female subscribers (approximately 9.3 million trips for males and 3.2 million for females).
+
+2. Age Distribution of Riders
+- The majority of trips are made by users aged 25-34 years, followed by those aged 35-44 years.
+- Most users in the 25-34 and 35-44 age groups are male.
+- Female users are more common in younger age groups, but they still represent a smaller proportion compared to males in all age categories.
+
+3. Average Trip Duration by Gender and User Type
+- Female customers have a longer average trip duration (28.6 minutes) compared to male customers (27 minutes).
+- Subscribers tend to have shorter average trip durations. Female subscribers ride for an average of 14.3 minutes, slightly longer than male subscribers, who average 12.4 minutes.
+
+4. Trip Duration by Day
+- The average trip duration for Customers is consistently higher than that for Subscribers across all days of the week.
+- Customer trip durations remain relatively stable throughout the week, peaking from Tuesday to Friday.
+- Subscribers have the shortest trip duration on Saturdays, with the highest durations recorded during weekdays (Monday to Friday).
