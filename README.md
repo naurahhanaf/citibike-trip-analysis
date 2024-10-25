@@ -33,4 +33,10 @@ The analysis provided insights into:
 2. Trip Pattern: Analysis of trip durations taken by users.
 
 ## Report and Visualization
-For a comprehensive view of the analysis and visual insights, please refer to the Looker Studio report [here](https://lookerstudio.google.com/s/hIg4Hdu6-fs).
+<!-- For a comprehensive view of the analysis and visual insights, please refer to the Looker Studio report [here](https://lookerstudio.google.com/s/hIg4Hdu6-fs).-->
+![Screenshot 2024-10-23 203126](https://github.com/user-attachments/assets/435ab35b-ee0d-447e-8280-f97cc6307183)
+
+## Summary
+- Subscribers (annual members) dominate Citibike usage, with males representing the majority of users.
+- The average trip duration for Customers (24-hour or 7-day pass users) tends to be longer than that for Subscribers, suggesting that occasional users or tourists may be using Citibike for leisure or exploration.
+- Subscribers typically use the service for shorter trips, possibly related to daily commuting or routine travel.
