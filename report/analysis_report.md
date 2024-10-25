@@ -86,7 +86,7 @@ ORDER BY
 
 ## Conclution
 1. **Dominance of Subscribers**
-- Subscribers significantly dominate the total number of trips compared to Customers (occasional users or tourists). There are around 12.2 million trips by subscribers, compared to 305.6 thousand trips by customers.
+- Subscribers (annual members) significantly dominate the total number of trips compared to Customers (24-hour or 7-day pass users). There are around 12.2 million trips by subscribers, compared to 305.6 thousand trips by customers.
 - In terms of gender, male subscribers far exceed female subscribers (approximately 9.3 million trips for males and 3.2 million for females).
 
 2. **Age Distribution of Riders**
