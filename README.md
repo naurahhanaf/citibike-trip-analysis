@@ -24,7 +24,6 @@ citibike-trip-analysis/
 │   ├── analysis_report.md    # Documentation of analysis and insights from the EDA
 │   └── visualization.png     # Screenshot of Looker Studio visualization report
 │
-├── url.txt                   # URL link to the Looker Studio project
 └── README.md                 # Project overview and guide
 ```
 
