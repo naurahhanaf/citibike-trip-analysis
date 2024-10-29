@@ -49,7 +49,7 @@ GROUP BY
 ```
 ![image](https://github.com/user-attachments/assets/bed8b79f-86c1-4d26-9b10-fd02b85e2f4b)
 
-**3. Trip Duration of Riders per Day**
+**3. Average Trip Duration of Riders per Day**
 ```sql
 SELECT DISTINCT
   usertype,
@@ -71,18 +71,44 @@ ORDER BY
 ```
 ![image](https://github.com/user-attachments/assets/6253bc92-67b6-4b11-9fc8-cb8235309baa)
 
+**4. Total Number of Trips by Day**
+```sql
+SELECT DISTINCT
+  usertype,
+  EXTRACT(DAYOFWEEK FROM starttime) AS day_order,
+  FORMAT_TIMESTAMP('%A', starttime) AS day_of_week, --Sunday, Monday, etc
+  COUNT(*) as number_of_trips
+FROM
+  `bigquery-public-data.new_york_citibike.citibike_trips`
+WHERE
+  tripduration <= 86400 AND
+  starttime IS NOT NULL
+  AND birth_year IS NOT NULL
+  AND gender != 'unknown'
+  AND EXTRACT(YEAR FROM starttime) = 2017
+GROUP BY 
+  usertype, day_order, day_of_week
+ORDER BY 
+  day_order ASC; 
+```
+![image](https://github.com/user-attachments/assets/5b535bed-0472-42e9-b457-1c462d039ae9)
+
 ## Visualization in Looker Studio
 **1. Age Distribution by Trip**
 
-![image](https://github.com/user-attachments/assets/eee87e06-2ee9-46db-9c63-b6966d349657)
+![image](https://github.com/user-attachments/assets/a537319a-7974-4955-ad62-c41bacd6dfcb)
 
 **2. Average Trips by Riders or User Type**
 
-![image](https://github.com/user-attachments/assets/7dd6727f-ac67-4ac8-8254-7b97a6eeb905)
+![image](https://github.com/user-attachments/assets/6ccdfb34-0826-4c51-b834-5b2c688df043)
 
-**3. Trip Duration of Riders per Day**
+**3. Average Trip Duration of Riders per Day**
 
-![image](https://github.com/user-attachments/assets/d1471b51-20cb-40e9-84b6-662b4b84b7fc)
+![image](https://github.com/user-attachments/assets/2626d056-345d-42e2-b310-631ca0ca30ee)
+
+**4. Total Number of Trips per Day**
+
+![image](https://github.com/user-attachments/assets/30229952-c5b2-48b4-8ecb-566fab4c88e2)
 
 ## Conclution
 1. **Dominance of Subscribers**
@@ -98,7 +124,6 @@ ORDER BY
 - Female customers have a longer average trip duration (28.6 minutes) compared to male customers (27 minutes).
 - Subscribers tend to have shorter average trip durations. Female subscribers ride for an average of 14.3 minutes, slightly longer than male subscribers, who average 12.4 minutes.
 
-4. **Trip Duration by Day**
+4. **User Type Trip Pattern per Day**
 - The average trip duration for Customers is consistently higher than that for Subscribers across all days of the week.
-- Customer trip durations remain relatively stable throughout the week, peaking from Tuesday to Friday.
-- Subscribers have the shortest trip duration on Saturdays, with the highest durations recorded during weekdays (Monday to Friday).
+- Subscribers make up the majority of trips on every day of the week, averaging around 2 million trips on weekdays, with slightly lower numbers on weekends.
