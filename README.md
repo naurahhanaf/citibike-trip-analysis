@@ -16,7 +16,7 @@ This project is part of a portfolio aimed at showcasing skills in data explorati
 ```graphql
 citibike-trip-analysis/
 │
-├── query/
+├── queries/
 │   ├── dataset.sql           # SQL file to query the full dataset for Looker Studio
 │   └── analysis.sql          # SQL file containing data cleaning and EDA queries
 │
