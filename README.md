@@ -33,7 +33,7 @@ The analysis provided insights into:
 2. Trip Pattern: Analysis of trip durations and total number of trips taken by users.
 
 ## Report and Visualization
-![image](https://github.com/user-attachments/assets/b743eacf-2bd8-4c61-95e5-18ebcef03c8f)
+![image](https://github.com/user-attachments/assets/646a9125-eb99-43ec-9451-8dd71bcc286b)
 
 For a comprehensive view of the analysis and visual insights, please refer to the Looker Studio report [here](https://lookerstudio.google.com/s/hIg4Hdu6-fs).
 
