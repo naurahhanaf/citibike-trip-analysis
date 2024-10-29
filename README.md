@@ -30,7 +30,7 @@ citibike-trip-analysis/
 ## Key Insights
 The analysis provided insights into:
 1. User Demographics: Breakdown of user types, age, and gender distribution.
-2. Trip Pattern: Analysis of trip durations taken by users.
+2. Trip Pattern: Analysis of trip durations and total number of trips taken by users.
 
 ## Report and Visualization
 ![image](https://github.com/user-attachments/assets/d60a6e17-ed00-48b3-9064-52cedf256dab)
