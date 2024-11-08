@@ -195,6 +195,25 @@ WHERE
 GROUP BY
   usertype, gender;
 
+--count number of trips for usertype by day of week
+SELECT DISTINCT
+  usertype,
+  EXTRACT(DAYOFWEEK FROM starttime) AS day_order,
+  FORMAT_TIMESTAMP('%A', starttime) AS day_of_week,
+  COUNT(*) AS number_of_trips
+FROM
+  `bigquery-public-data.new_york_citibike.citibike_trips`
+WHERE
+  tripduration <= 86400 AND
+  starttime IS NOT NULL
+  AND birth_year IS NOT NULL
+  AND gender != 'unknown'
+  AND EXTRACT(YEAR FROM starttime) = 2017
+GROUP BY 
+  usertype, day_order, day_of_week
+ORDER BY 
+  day_order ASC; 
+
 --analyze the average trip duration for usertype by day of week
 SELECT DISTINCT
   usertype,
